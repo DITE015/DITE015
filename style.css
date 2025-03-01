@@ -1,0 +1,152 @@
+/* 기본 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더 */
+.header {
+    background: linear-gradient(135deg, #FFB6C1, #FF69B4);
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.header h1 a {
+    color: #C2185B;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.header h1 a:hover {
+    color: #9B174D;
+    opacity: 0.9;
+}
+
+/* 컨테이너 */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* 상품 카드 */
+.product {
+    border: 2px solid #FF69B4;
+    background: rgba(255, 182, 193, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 4px 4px 10px rgba(255, 105, 180, 0.2);
+    transition: 0.3s;
+}
+
+.product:hover {
+    background: rgba(255, 182, 193, 0.2);
+    transform: scale(1.03);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.product p:first-of-type {
+    font-size: 20px;
+    font-weight: 900;
+    color: #C2185B;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.product a {
+    display: inline-block;
+    background: #FF69B4;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.product a:hover {
+    background: #D14783;
+}
+
+/* 상세 페이지 스타일 */
+.product-info {
+    margin-top: 20px;
+}
+
+.buy-button, .back-button {
+    background: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.back-button {
+    background: #666;
+}
+
+/* 푸터 */
+.footer {
+    background: linear-gradient(135deg, #FFB6C1, #FF69B4);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* 상세 페이지 이미지 */
+.container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}/* 메인 상품 이미지 */
+.main-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* 상품 상세 이미지 (아래 정렬) */
+.extra-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.extra-images img {
+    width: 100%;
+    max-width: 280px; /* 한 줄에 2~3개씩 배치 */
+    height: auto;
+    object-fit: contain;
+}
+
+/* 버튼 스타일 */
+.buy-button, .back-button {
+    background: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.back-button {
+    background: #666;
+}
+

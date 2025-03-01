@@ -1,0 +1,166 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+/* 헤더 색상 */
+.header { 
+    background: linear-gradient(135deg, #FFB6C1, #FF69B4);
+    color: white; 
+    padding: 15px; 
+    text-align: center; 
+}
+
+/* 컨테이너 */
+.container { 
+    padding: 20px; 
+    display: flex; 
+    justify-content: center; 
+}
+
+/* 상품 이미지 */
+.product { 
+    max-width: 600px; 
+    text-align: center; 
+}
+
+.product img { 
+    width: 100%; 
+    height: auto; 
+}
+
+.product-info { 
+    margin-top: 20px; 
+}
+
+/* 구매 버튼 */
+.buy-button { 
+    background: #FF69B4;
+    color: white; 
+    padding: 10px; 
+    border: none; 
+    cursor: pointer; 
+    margin-top: 10px; 
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background: #D14783;
+}
+
+/* 돌아가기 버튼 */
+.back-button {
+    background: #C2185B;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+.back-button:hover {
+    background: #9B174D;
+}
+
+/* 추가 이미지 */
+.container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* 기존 푸터 스타일에서 position: fixed 제거 */
+.footer {
+    position: relative; /* fixed를 relative로 변경하여 일반 흐름대로 배치 */
+    background: linear-gradient(135deg, #FFB6C1, #FF69B4);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px; /* 위 요소들과 간격 추가 */
+}
+
+
+/* 상품 상세 이미지 (본문) */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 300px; /* 한 줄에 2~3개씩 배치 */
+    height: auto;
+    object-fit: contain;
+}
+
+/* 추가 이미지 (풋터 위) */
+.extra-images {
+    display: flex;
+    flex-direction: column; /* 이미지를 세로 방향으로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+    gap: 15px; /* 이미지 간격 */
+    padding: 20px;
+    margin-bottom: 60px; /* 풋터와 간격 */
+}
+
+.extra-images img {
+    width: 100%;
+    max-width: 600px; /* 한 줄에 하나씩 표시 */
+    height: auto;
+    object-fit: contain;
+    display: block; /* 인라인 요소 속성을 블록으로 변경 */
+}
+
+/* 헤더 내부 링크 스타일 */
+.header h1 a {
+    color: white; /* 기존과 동일한 흰색 */
+    text-decoration: none; /* 밑줄 제거 */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header h1 a:hover {
+    color: #f1f1f1; /* 마우스 올리면 약간 밝게 */
+    opacity: 0.9;
+}
+
+
+/* 돌아가기 버튼 컨테이너 (맨 아래 정렬) */
+.back-button-container {
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    padding: 20px; /* 여백 추가 */
+}
+
+/* 다른 상품 둘러보기 버튼 컨테이너 */
+.browse-button-container {
+    display: flex;
+    justify-content: center; /* 가운데 정렬 */
+    padding: 20px; /* 여백 추가 */
+    margin-top: 20px; /* 푸터와 간격 */
+}
+
+/* 다른 상품 둘러보기 버튼 스타일 */
+.browse-button {
+    background: #FF69B4; /* 핑크 */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.browse-button:hover {
+    background: #D14783; /* 마우스 올리면 더 진한 핑크 */
+}
